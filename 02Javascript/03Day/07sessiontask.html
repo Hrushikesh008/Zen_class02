@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cal sum of array elements >> 5 types 
+        var arr=[1,4,7,9,40]
+
+        //Function 1 - Function With parameters
+
+        function sum(){
+            for(let i=0; i<+arr.length; i++){
+            var value = arr[i]
+        }
+            total = value + value
+            console.log("Function With parameters : " + total);
+        }
+
+        sum();
+        
+        //Function 2 - //Functions with return keyword
+
+        function sum1(){
+            for(let i=0; i<+arr.length; i++){
+            var value = arr[i]
+        }
+            return value + value
+        }
+
+        console.log("Functions with return keyword : " + sum1());
+
+        // Functiom 3 - Annoymous Functions
+
+        var sum3 = function(){
+            for(let i=0; i<+arr.length; i++){
+            var value = arr[i]
+        }
+            return value + value
+        }
+
+        console.log("Annoymous Functions: "+sum3());
+
+        // Function 4 - IIFE Function
+
+        (function(){
+            for(let i=0; i<+arr.length; i++){
+            var value = arr[i]
+        }
+            total = value + value
+            console.log("IIFE Function: " + total);
+        })()
+
+        //Function 5 - // Arrow functions
+
+        var sum4=() =>{
+            for(let i=0; i<+arr.length; i++){
+            var value = arr[i]
+        }
+            return value + value
+        }
+
+        console.log("Arrow functions: " + sum4());
+
+    </script>
+</body>
+</html>
